@@ -13,15 +13,6 @@ var clean     = require('gulp-clean');
 var Server    = require('karma').Server;
 var ngHtml2Js = require("gulp-ng-html2js");
 
-/**
- * Run test once and exit
- */
-gulp.task('unit-tests', function (done) {
-  new Server({
-    configFile: __dirname + '/karma.conf.js',
-    singleRun: true
-  }, done).start();
-});
 
 gulp.task('lint', function() {
   gulp.src(['./app/**/*.js', '!./app/bower_components/**'])
@@ -35,7 +26,8 @@ gulp.task('lint', function() {
 gulp.task('connect', function () {
   connect.server({
     root: 'app/',
-    port: 8888
+    port: 8888,
+    livereload : true
   });
 });
 

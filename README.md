@@ -1,15 +1,14 @@
-# Angular Seed Project
+# Angular Dependency Injection Example
 
-Angular seed project with gulp as the build tool. As of now, there are 3 gulp tasks; lint, unit-tests and connect.
-
-- lint : for linting
-- unit-test : for running tests
-- connect : for starting a server. default port is 8888
+Example showing how to create a factory in angularJS using 
+- the usual angular.factory 
+- using $provide
+- using provider and its' configurations
 
 # Getting Started
 
 Please make sure nodeJS is installed. Also, please install 'gulp' and 'bower' globally by running the following commonad
-> npm isntall -g gulp
+> npm install -g gulp
 
 > npm install -g bower
 
@@ -23,4 +22,3 @@ To get you started you can simply clone the repository and install the dependenc
 > gulp connect
 
 visit : http://localhost:8888
-
